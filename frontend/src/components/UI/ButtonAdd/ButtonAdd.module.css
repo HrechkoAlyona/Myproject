@@ -1,0 +1,68 @@
+.root {
+  width: 100%;
+  max-width: 496px;
+  height: 58px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+
+  background: #0d50ff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(13, 80, 255, .2);
+}
+
+.root:hover {
+  background: #282828;
+  box-shadow: 0 6px 12px rgba(13, 80, 255, .3);
+  transform: translateY(-2px);
+}
+
+.root:active {
+  transform: none;
+  box-shadow: 0 2px 4px rgba(13, 80, 255, .2);
+}
+
+/* added state */
+.stateAdded {
+  background: #fff;
+  color: #282828;
+  border: 1px solid #282828;
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.stateAdded:hover {
+  background: #fff;
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+/* disabled */
+.stateDisabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+  .root {
+    height: 50px;
+    font-size: 16px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .root {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+}

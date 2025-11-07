@@ -1,0 +1,18 @@
+.notfound {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.notfound p {
+  color: #8b8b8b;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 500;
+  text-align: center;
+}

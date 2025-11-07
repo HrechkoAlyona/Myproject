@@ -1,0 +1,23 @@
+.button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 126%;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  background: #FFFFFF;
+  color: #8B8B8B;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #F1F3F4;
+  color: #000;
+}
+
+/* это состояние из NavLink — активная страница */
+.active {
+  background: #FFFFFF;
+  color: #000;
+}

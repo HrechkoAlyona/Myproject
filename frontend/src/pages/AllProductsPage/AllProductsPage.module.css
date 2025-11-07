@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #282828;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+/* --- GRID 4 в ряд --- */
+.grid, .productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* --- CARD --- */
+.card, .productCard {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 16px;
+  transition: transform .25s ease;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* картинка */
+.productImage, img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+}
+
+/* badge скидки */
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 2px 12px;
+  background: #2d7ff9;
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* имя */
+.name, .productName {
+  font-size: 18px;
+  line-height: 110%;
+  text-align: left;
+  margin: 12px;
+  height: 44px;
+  overflow: hidden;
+}
+
+/* PRICE */
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 12px;
+}
+
+.newPrice {
+  font-size: 32px;
+  font-weight: 500;
+  color: #282828;
+}
+
+.oldPrice {
+  font-size: 18px;
+  color: #6F6F6F;
+  text-decoration: line-through;
+}
+
+/* ADD BTN */
+.addBtnWrap {
+  padding: 0 12px;
+  margin-top: auto;
+}
+
+.addBtn {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #282828;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .25s;
+  font-size: 16px;
+}
+
+.addBtn:hover {
+  background: #282828;
+  color: #fff;
+}
+
+/* Show more */
+.showMoreBtn {
+  margin: 40px auto;
+  display: block;
+  padding: 14px 40px;
+  background: #2d7ff9;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

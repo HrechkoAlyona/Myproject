@@ -1,0 +1,82 @@
+.page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #282828;
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.12);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.name {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px;
+}
+
+.newPrice {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.oldPrice {
+  font-size: 18px;
+  color: #6f6f6f;
+  text-decoration: line-through;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 2px 12px;
+  background: #2d7ff9;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}

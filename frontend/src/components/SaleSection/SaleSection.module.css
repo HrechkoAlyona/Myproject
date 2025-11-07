@@ -1,0 +1,179 @@
+/* ===== SECTION ===== */
+.section {
+  max-width: 1440px;
+  margin: 80px auto 0;
+  padding: 0 40px;
+}
+
+.topRow {
+  max-width: 1360px;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  color: #282828;
+  margin-bottom: 40px;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+/* ===== slider wrapper ===== */
+.sliderWrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ===== horizontal scroll grid ===== */
+.grid {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  overflow-y: hidden;       /* ← ВАЖНО, убирает вертикальный */
+  scroll-behavior: smooth;
+  height: fit-content;
+  padding-bottom: 24px;
+  scrollbar-width: none;
+}
+.grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* arrows */
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.sliderWrapper:hover .arrowLeft,
+.sliderWrapper:hover .arrowRight {
+  display: flex;
+}
+.arrowLeft { left: -12px; }
+.arrowRight { right: -12px; }
+
+/*===== card =====*/
+.card {
+  position: relative;
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  transition: transform .25s, box-shadow .25s;
+  scroll-snap-align: start;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+/* ===== texts ===== */
+.name {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  color: #282828;
+  margin: 12px 12px 8px;
+  height: 42px;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-left: 12px;
+}
+
+.newPrice {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  color: #282828;
+}
+
+.oldPrice {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  color: #6F6F6F;
+  text-decoration: line-through;
+}
+
+/*===== badge =====*/
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 2px 12px;
+  background: #2d7ff9;
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+/*===== add button =====*/
+.card:hover .addBtnWrap {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.addBtnWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 14px 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+  box-sizing: border-box;
+}
+
