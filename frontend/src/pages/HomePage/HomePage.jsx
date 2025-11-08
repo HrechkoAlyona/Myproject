@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <Banner />
       <CategoriesSection /> 
-      <DiscountBanner />   {/* форма уже внутри */}
+      <DiscountBanner />   
       <SaleSection />
     </>
   );

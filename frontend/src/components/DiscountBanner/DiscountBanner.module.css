@@ -61,3 +61,22 @@
 .form input::placeholder {
   color: rgba(255,255,255,0.9);
 }
+
+.imageBox {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imageBox img {
+  
+  
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+    width: 145%;    
+  max-width: none;  
+  height: auto;
+  object-fit: contain;
+}

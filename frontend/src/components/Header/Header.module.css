@@ -18,8 +18,10 @@
 
 .wrap {
   width: 100%;
-  margin: 0; /* никаких ограничений */
-  padding: 0 60px; /* внутри отступы как весь сайт */
+  max-width: 1300px;   /* ← фиксируем максимальную ширину */
+  margin: 0 auto;      /* ← центрируем блок */
+  padding: 0 40px;     /* ← боковые отступы, чтобы не прилипало к краю */
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
