@@ -1,7 +1,9 @@
+// src/components/DiscountBanner/DiscountBanner.jsx
+
 import React, { useState } from "react";
 import styles from "./DiscountBanner.module.css";
 import Modal from "../UI/Modal/Modal";
-import dogsImg from "../../assets/image.png"; // <-- добавили картинку
+import dogsImg from "../../assets/image.png";
 
 const nameRe = /^[A-Za-z\s]{2,}$/;
 const phoneRe = /^\+?\d{10,14}$/;
@@ -46,13 +48,13 @@ export default function DiscountBanner() {
         <h2 className={styles.title}>5% off on the first order</h2>
 
         <div className={styles.inner}>
-          
-          {/* картинка */}
+
+          {/* КАРТИНКА — слева */}
           <div className={styles.imageBox}>
             <img src={dogsImg} alt="pets" />
           </div>
 
-          {/* форма */}
+          {/* ФОРМА — справа */}
           <form className={styles.form} onSubmit={handleSubmit}>
             <input
               name="name"
@@ -85,6 +87,7 @@ export default function DiscountBanner() {
               {sent ? "Request submitted" : "Get a discount"}
             </button>
           </form>
+
         </div>
       </section>
 

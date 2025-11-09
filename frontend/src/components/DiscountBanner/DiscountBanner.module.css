@@ -1,8 +1,7 @@
 .banner {
   width: 100%;
-  max-width: 1250px;       
-  margin: 0 auto;       
-  margin-top: 40px;
+  max-width: 1250px;
+  margin: 40px auto 0;
   border-radius: 12px;
   background: linear-gradient(261.47deg, #2451C6 32.63%, #0D50FF 98.96%);
   padding: 60px;
@@ -15,18 +14,35 @@
   line-height: 110%;
   color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
 
 .inner {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 420px;  /* слева — пусто, справа — форма */
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
 }
 
+/* левая картинка */
+.imageBox {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.imageBox img {
+  width: 100%;
+  max-width: 700px;   /* чтобы была крупная */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent !important;
+}
+
+/* форма справа */
 .form {
+  width: 420px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -40,6 +56,10 @@
   padding: 0 16px;
   color: white;
   font-size: 16px;
+}
+
+.form input::placeholder {
+  color: rgba(255,255,255,0.9);
 }
 
 .form button {
@@ -57,26 +77,4 @@
   color: #fdd;
   font-size: 13px;
   margin-top: -6px;
-}
-.form input::placeholder {
-  color: rgba(255,255,255,0.9);
-}
-
-.imageBox {
-  max-width: 500px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.imageBox img {
-  
-  
-  object-fit: contain;
-  display: block;
-  background: transparent !important;
-    width: 145%;    
-  max-width: none;  
-  height: auto;
-  object-fit: contain;
 }
